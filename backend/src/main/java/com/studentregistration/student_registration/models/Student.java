@@ -10,8 +10,6 @@ public class Student {
     private boolean morning;
     private boolean afternoon;
     private boolean evening;
-    
-    
 
     public Student(int id, String name, String email, String phone, int idCourse, boolean morning, boolean afternoon,
             boolean evening) {

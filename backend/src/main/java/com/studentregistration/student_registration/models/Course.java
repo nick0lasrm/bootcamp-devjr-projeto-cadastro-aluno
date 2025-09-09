@@ -1,10 +1,10 @@
 package com.studentregistration.student_registration.models;
 
 public class Course {
-    
+
     private int id;
     private String name;
-    
+
     public Course(int id, String name) {
         this.id = id;
         this.name = name;
@@ -28,5 +28,5 @@ public class Course {
     public void setName(String name) {
         this.name = name;
     }
-    
+
 }
