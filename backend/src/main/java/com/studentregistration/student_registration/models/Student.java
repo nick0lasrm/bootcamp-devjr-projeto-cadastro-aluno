@@ -7,9 +7,9 @@ public class Student {
     private String email;
     private String phone;
     private int idCourse;
-    private int period;
+    private boolean period;
     
-    public Student(int id, String name, String email, String phone, int idCourse, int period) {
+    public Student(int id, String name, String email, String phone, int idCourse, boolean period) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -51,10 +51,10 @@ public class Student {
     public void setIdCourse(int idCourse) {
         this.idCourse = idCourse;
     }
-    public int getPeriod() {
+    public boolean getPeriod() {
         return period;
     }
-    public void setPeriod(int period) {
+    public void setPeriod(boolean period) {
         this.period = period;
     }
 
