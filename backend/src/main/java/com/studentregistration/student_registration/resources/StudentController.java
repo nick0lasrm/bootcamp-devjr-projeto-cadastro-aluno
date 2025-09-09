@@ -1,7 +1,6 @@
 package com.studentregistration.student_registration.resources;
 
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,9 +24,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class StudentController {
     
     private List<Student> students = Arrays.asList(
-                                new Student(1, "Nickolas", "nickolas@gmail.com", "(99) 99999-9999", 1, true),
-                                new Student(2, "Raphael", "raphael@gmail.com", "(99) 99999-9999", 2, true),
-                                new Student(3, "Machado", "machado@gmail.com", "(99) 99999-9999", 3, true));
+                                new Student(1, "Nickolas", "nickolas@gmail.com", "(99) 99999-9999", 1, true, false, false),
+                                new Student(2, "Raphael", "raphael@gmail.com", "(99) 99999-9999", 2, true, false, false),
+                                new Student(3, "Machado", "machado@gmail.com", "(99) 99999-9999", 3, true, false, false));
 
     @PostMapping("students")
     public ResponseEntity<Student> saveStudent(@RequestBody Student student) {

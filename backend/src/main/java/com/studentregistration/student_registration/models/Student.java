@@ -7,15 +7,22 @@ public class Student {
     private String email;
     private String phone;
     private int idCourse;
-    private boolean period;
+    private boolean morning;
+    private boolean afternoon;
+    private boolean evening;
     
-    public Student(int id, String name, String email, String phone, int idCourse, boolean period) {
+    
+
+    public Student(int id, String name, String email, String phone, int idCourse, boolean morning, boolean afternoon,
+            boolean evening) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.idCourse = idCourse;
-        this.period = period;
+        this.morning = morning;
+        this.afternoon = afternoon;
+        this.evening = evening;
     }
 
     public Student() {
@@ -24,38 +31,65 @@ public class Student {
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getPhone() {
         return phone;
     }
+
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
     public int getIdCourse() {
         return idCourse;
     }
+
     public void setIdCourse(int idCourse) {
         this.idCourse = idCourse;
     }
-    public boolean getPeriod() {
-        return period;
+
+    public boolean isMorning() {
+        return morning;
     }
-    public void setPeriod(boolean period) {
-        this.period = period;
+
+    public void setMorning(boolean morning) {
+        this.morning = morning;
+    }
+
+    public boolean isAfternoon() {
+        return afternoon;
+    }
+
+    public void setAfternoon(boolean afternoon) {
+        this.afternoon = afternoon;
+    }
+
+    public boolean isEvening() {
+        return evening;
+    }
+
+    public void setEvening(boolean evening) {
+        this.evening = evening;
     }
 
 }
